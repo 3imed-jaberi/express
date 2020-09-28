@@ -5,7 +5,7 @@ unreleased
   * Fix `res.jsonp(obj, status)` deprecation message
   * Fix typo in `res.is` JSDoc
   * deps: cookie@0.4.1
-    - Fix `maxAge` option to reject invalid values.
+    - Fix `maxAge` option to reject invalid values
 
 4.17.1 / 2019-05-25
 ===================
