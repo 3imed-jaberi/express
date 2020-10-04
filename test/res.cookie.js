@@ -116,17 +116,17 @@ describe('res', function(){
         .expect(200, optionsCopy, done)
       })
 
-      it('should throw an error when invalid maxAge passed', function(done){
-        var app = express();
+      it('should throw an error when invalid maxAge passed', function (done) {
+        var app = express()
 
-        app.use(function(req, res){
+        app.use(function (req, res) {
           res.cookie('name', 'tobi', { maxAge: Infinity })
           res.end()
-        });
+        })
 
         request(app)
-        .get('/')
-        .expect(500, /option maxAge is invalid/, done)
+          .get('/')
+          .expect(500, /option maxAge is invalid/, done)
       })
     })
 
